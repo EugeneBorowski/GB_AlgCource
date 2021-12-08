@@ -1,9 +1,25 @@
 ﻿using System;
 
-namespace MainProject.Lesson_1
+namespace GB_AlgCource
 {
-    public class Lesson1_3
+    internal class Lesson3Fibonacci : ILesson
     {
+        public string Name => "fib";
+        public string Description => "1.3 Поиск числа фибоначчи";
+        public void Demo()
+        {
+            int n = 9;
+            Console.Write($"ЧИсло фибоначчи для числа {n}: ");
+            Console.WriteLine(GetFibonacci2(n));
+            n = 10;
+            Console.Write($"ЧИсло фибоначчи для числа {n} рекурсивным способом: ");
+            Console.WriteLine(GetFibonacciRec(n));
+        }
+        /// <summary>
+        /// Метод вычисления числа фибоначчи
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static int GetFibonacci2(int n)
         {
             var result = 0;
@@ -17,11 +33,15 @@ namespace MainProject.Lesson_1
             }
             return result;
         }
-
-        public static int GetFibonacci(int n)
+        /// <summary>
+        /// Метод вычисления числа фибоначчи рекурсивным способом
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public static int GetFibonacciRec(int n)
         {
             if (n == 0 || n == 1) return n;
-            return GetFibonacci(n - 1) + GetFibonacci(n - 2);
+            return GetFibonacciRec(n - 1) + GetFibonacciRec(n - 2);
         }
     }
 }
