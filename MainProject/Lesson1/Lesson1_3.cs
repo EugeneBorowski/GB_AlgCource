@@ -15,6 +15,14 @@ namespace GB_AlgCource
             Console.Write($"Число фибоначчи для числа {n} рекурсивным способом: ");
             Console.WriteLine(GetFibonacciRec(n));
         }
+        public void Start(string input)
+        {
+            var n = int.Parse(input);
+            Console.Write($"Число фибоначчи для числа {n}: ");
+            Console.WriteLine(GetFibonacci2(n));
+            Console.Write($"Число фибоначчи для числа {n} рекурсивным способом: ");
+            Console.WriteLine(GetFibonacciRec(n));
+        }
         /// <summary>
         /// Метод вычисления числа фибоначчи
         /// </summary>

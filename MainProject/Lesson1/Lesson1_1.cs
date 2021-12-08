@@ -15,6 +15,13 @@ namespace GB_AlgCource
             Console.WriteLine($"Является ли {n} простым числом?");
             Console.WriteLine(IsPrime(n));
         }
+
+        public void Start(string input)
+        {
+            var n = int.Parse(input);
+            Console.WriteLine($"Является ли {n} простым числом?");
+            Console.WriteLine(IsPrime(n));
+        }
         /// <summary>
         /// Метод вычисления простого числа
         /// </summary>

@@ -7,5 +7,6 @@ namespace GB_AlgCource
         string Name { get; }
         string Description { get; }
         void Demo();
+        void Start(string input);
     }
 }

@@ -12,6 +12,10 @@ namespace GB_AlgCource
             Console.WriteLine($"Странный метод вычисления суммы чисел {string.Join(' ',array)}");
             Console.WriteLine($"Сумма чисел: {StrangeSum(array)}");
         }
+        public void Start(string input)
+        {
+
+        }
         /// <summary>
         /// Метод вычисления странной суммы
         /// </summary>

@@ -19,7 +19,6 @@ namespace GB_AlgCource
             {
                 Console.WriteLine(string.Format($"Код:{lesson.Name,-10} ({lesson.Description})"));
             }
-
         }
     }
 }
