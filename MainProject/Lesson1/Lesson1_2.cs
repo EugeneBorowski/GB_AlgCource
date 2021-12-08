@@ -1,10 +1,22 @@
 ﻿using System;
 
-namespace MainProject.Lesson_1
+namespace GB_AlgCource
 {
-    class Lesson1_2
+    internal class Lesson2StrangeSum : ILesson
     {
-        //Сложность O(N^3)
+        public string Name => "strSum";
+        public string Description => "1.2 Поиск странной суммы чисел";
+        public void Demo()
+        {
+            var array = new[] { 1, 2, 3, 4, 5 };
+            Console.WriteLine($"Странный метод вычисления суммы чисел {string.Join(' ',array)}");
+            Console.WriteLine($"Сумма чисел: {StrangeSum(array)}");
+        }
+        /// <summary>
+        /// Метод вычисления странной суммы
+        /// </summary>
+        /// <param name="inputArray"></param>
+        /// <returns></returns>
         public static int StrangeSum(int[] inputArray)
         {
             int sum = 0;

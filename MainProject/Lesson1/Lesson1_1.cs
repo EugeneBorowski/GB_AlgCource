@@ -1,10 +1,26 @@
 ﻿using System;
 
-namespace MainProject.Lesson_1
+namespace GB_AlgCource
 {
-    class Lesson1_1
+    internal class Lesson1PrimeNumbers : ILesson
     {
-        public static string IsPrime(int number)
+        public string Name => "prime";
+        public string Description => "1.1 Поиск простого числа";
+        public void Demo()
+        {
+            int n = 7;
+            Console.WriteLine($"Является ли {n} простым числом?");
+            Console.WriteLine(IsPrime(n));
+            n = 9;
+            Console.WriteLine($"Является ли {n} простым числом?");
+            Console.WriteLine(IsPrime(n));
+        }
+        /// <summary>
+        /// Метод вычисления простого числа
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        private static string IsPrime(int number)
         {
             var d = 0;
             var i = 2;
@@ -14,7 +30,7 @@ namespace MainProject.Lesson_1
                     d++;
                 i++;
             }
-            var result = d == 0 ? $"{number} простое" : $"{number} не простое";
+            var result = d == 0 ? $"Число {number} простое" : $"Число {number} не простое";
             return result;
         }
     }
