@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GB_AlgCource
+namespace GBAlgCource
 {
     class Program
     {

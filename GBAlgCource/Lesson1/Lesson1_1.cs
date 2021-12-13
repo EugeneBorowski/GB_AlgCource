@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GB_AlgCource
+namespace GBAlgCource
 {
     internal class Lesson1PrimeNumbers : ILesson
     {
