@@ -2,7 +2,7 @@
 
 namespace GBAlgCource
 {
-    internal class Lesson1PrimeNumbers : ILesson
+    internal class Lesson11PrimeNumbers : ILesson
     {
         public string Name => "prime";
         public string Description => "1.1 Поиск простого числа";

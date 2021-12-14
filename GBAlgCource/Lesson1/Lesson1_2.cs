@@ -2,7 +2,7 @@
 
 namespace GBAlgCource
 {
-    internal class Lesson2StrangeSum : ILesson
+    internal class Lesson12StrangeSum : ILesson
     {
         public string Name => "strangeSum";
         public string Description => "1.2 Поиск странной суммы чисел";
