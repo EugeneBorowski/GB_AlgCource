@@ -4,7 +4,7 @@ namespace GBAlgCource
 {
     internal class Lesson2StrangeSum : ILesson
     {
-        public string Name => "strSum";
+        public string Name => "strangeSum";
         public string Description => "1.2 Поиск странной суммы чисел";
         public void Demo()
         {
@@ -12,9 +12,10 @@ namespace GBAlgCource
             Console.WriteLine($"Странный метод вычисления суммы чисел {string.Join(' ',array)}");
             Console.WriteLine($"Сумма чисел: {StrangeSum(array)}");
         }
-        public void Start(string input)
+        public void Start()
         {
-
+            Console.WriteLine("Режим ввода не предусмотрен");
+            Demo();
         }
         /// <summary>
         /// Метод вычисления странной суммы

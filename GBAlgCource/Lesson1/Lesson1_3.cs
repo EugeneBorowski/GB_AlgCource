@@ -15,13 +15,20 @@ namespace GBAlgCource
             Console.Write($"Число фибоначчи для числа {n} рекурсивным способом: ");
             Console.WriteLine(GetFibonacciRec(n));
         }
-        public void Start(string input)
+        public void Start()
         {
-            var n = int.Parse(input);
-            Console.Write($"Число фибоначчи для числа {n}: ");
-            Console.WriteLine(GetFibonacci2(n));
-            Console.Write($"Число фибоначчи для числа {n} рекурсивным способом: ");
-            Console.WriteLine(GetFibonacciRec(n));
+            Console.Write("Введите число или оставьте ввод пустым что бы запустить демо режим:");
+            string input = Console.ReadLine();
+            if (string.IsNullOrEmpty(input))
+                Demo();
+            else
+            {
+                var n = int.Parse(input);
+                Console.Write($"Число фибоначчи для числа {n}: ");
+                Console.WriteLine(GetFibonacci2(n));
+                Console.Write($"Число фибоначчи для числа {n} рекурсивным способом: ");
+                Console.WriteLine(GetFibonacciRec(n));
+            }
         }
         /// <summary>
         /// Метод вычисления числа фибоначчи

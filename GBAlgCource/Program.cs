@@ -14,10 +14,19 @@ namespace GBAlgCource
 
         static void Main()
         {
-            Console.WriteLine("Введите код задания для его запуска:");
+            Console.WriteLine("Скисок доступных заданий:");
             foreach (ILesson lesson in _lessons)
             {
                 Console.WriteLine(string.Format($"Код:{lesson.Name,-10} ({lesson.Description})"));
+            }
+
+            Console.Write("Введите код задания для его запуска: ");
+            var startLessonName = Console.ReadLine();
+
+            foreach (ILesson lesson in _lessons)
+            {
+                if (lesson.Name == startLessonName)
+                    lesson.Start();
             }
         }
     }

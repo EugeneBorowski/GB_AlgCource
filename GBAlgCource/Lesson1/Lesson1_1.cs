@@ -16,11 +16,18 @@ namespace GBAlgCource
             Console.WriteLine(IsPrime(n));
         }
 
-        public void Start(string input)
+        public void Start()
         {
-            var n = int.Parse(input);
-            Console.WriteLine($"Является ли {n} простым числом?");
-            Console.WriteLine(IsPrime(n));
+            Console.Write("Введите число или оставьте ввод пустым что бы запустить демо режим:");
+            var input = Console.ReadLine();
+            if (string.IsNullOrEmpty(input))
+                Demo();
+            else
+            {
+                var n = int.Parse(input);
+                Console.WriteLine($"Является ли {n} простым числом?");
+                Console.WriteLine(IsPrime(n));
+            }
         }
         /// <summary>
         /// Метод вычисления простого числа
