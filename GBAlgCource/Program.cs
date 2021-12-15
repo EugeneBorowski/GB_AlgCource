@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GBAlgCource.Lesson3;
 
 namespace GBAlgCource
 {
@@ -7,9 +8,10 @@ namespace GBAlgCource
     {
         static List<ILesson> _lessons = new()
         {
-            new Lesson1PrimeNumbers(),
-            new Lesson2StrangeSum(),
-            new Lesson3Fibonacci()
+            new Lesson11PrimeNumbers(),
+            new Lesson12StrangeSum(),
+            new Lesson13Fibonacci(),
+            new Lesson3ClassStruct()
         };
 
         static void Main()
@@ -17,7 +19,7 @@ namespace GBAlgCource
             Console.WriteLine("Скисок доступных заданий:");
             foreach (ILesson lesson in _lessons)
             {
-                Console.WriteLine(string.Format($"Код:{lesson.Name,-10} ({lesson.Description})"));
+                Console.WriteLine(string.Format($"Код:{lesson.Name,-12} ({lesson.Description})"));
             }
 
             Console.Write("Введите код задания для его запуска: ");

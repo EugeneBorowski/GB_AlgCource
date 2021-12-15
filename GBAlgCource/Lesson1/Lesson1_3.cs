@@ -2,7 +2,7 @@
 
 namespace GBAlgCource
 {
-    internal class Lesson3Fibonacci : ILesson
+    internal class Lesson13Fibonacci : ILesson
     {
         public string Name => "fib";
         public string Description => "1.3 Поиск числа фибоначчи";
