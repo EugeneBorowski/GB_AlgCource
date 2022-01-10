@@ -1,5 +1,4 @@
 ﻿using System;
-using GBAlgCource.Lesson4.Interface;
 
 namespace GBAlgCource.Lesson4
 {

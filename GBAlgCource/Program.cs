@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using GBAlgCource.Lesson3;
 using GBAlgCource.Lesson4;
+using GBAlgCource.Lesson5;
 
 namespace GBAlgCource
 {
@@ -15,6 +16,8 @@ namespace GBAlgCource
             new Lesson3ClassStruct(),
             new Lesson4BinaryTree(),
             new Lesson4HashTables(),
+            new Lessson5BFS(),
+            new Lessson5DFS()
         };
 
         static void Main()
