@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GBAlgCource.Lesson2;
 using GBAlgCource.Lesson3;
 
 namespace GBAlgCource
@@ -11,6 +12,7 @@ namespace GBAlgCource
             new Lesson11PrimeNumbers(),
             new Lesson12StrangeSum(),
             new Lesson13Fibonacci(),
+            new Lesson2LinkedList(),
             new Lesson3ClassStruct()
         };
 
